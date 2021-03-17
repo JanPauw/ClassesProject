@@ -1,0 +1,21 @@
+﻿Covid 19 Vac
+
+Hospital info
+==================================
+Hospital Name: Greenacres
+Address: 1 Cape Rd
+Private or Public: Private
+Province: Eastern Cape
+
+
+Info of each person: 
+===================================
+ID:
+Medical Aid:
+Name:
+Surname:
+Ref Dr:
+Blood Type:
+Allergies: 
+Had C-19:
+Vaccine:
