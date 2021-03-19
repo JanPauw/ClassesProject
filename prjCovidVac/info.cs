@@ -53,6 +53,7 @@ namespace prjCovidVac
         #region Set Array's Size
         public void setArrays(int size)
         {
+            iArraySize = size;
             strID = new string[size];
             strMedAid = new string[size];
             strName = new string[size];
