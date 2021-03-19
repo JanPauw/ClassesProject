@@ -24,8 +24,6 @@ namespace prjClassMany
 
         #endregion
 
-       
-
         #region add to arrays
         public void setProduct(String strProduct)
         {
@@ -91,6 +89,7 @@ namespace prjClassMany
             iSizeArray = num;
         }
         #endregion
+
         public string getShopName()
         { 
             return strShopName;

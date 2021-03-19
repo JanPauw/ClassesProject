@@ -23,6 +23,7 @@ namespace prjCovidVac
         public string Hospital_Address { get => strHospitalAddress; set => strHospitalAddress = value; }
         public bool BType { get => bType; set => bType = value; }
         public char CProvince { get => cProvince; set => cProvince = value; }
+        public int ArraySize { get => iArraySize; set => iArraySize = value; }
         #endregion
 
         #region Patient Info
@@ -35,6 +36,18 @@ namespace prjCovidVac
         private static string[] strAllergies;
         private static bool[] bHasCovid;
         private static string[] strVaccine;
+        #endregion
+
+        #region Get Patient Info
+        public string[] StrID { get => strID; }
+        public string[] StrMedAid { get => strMedAid; }
+        public string[] StrName { get => strName; }
+        public string[] StrSurname { get => strSurname; }
+        public string[] StrRefDoc { get => strRefDoc; }
+        public char[] CBloodType { get => cBloodType; }
+        public string[] StrAllergies { get => strAllergies; }
+        public bool[] BHasCovid { get => bHasCovid; }
+        public string[] StrVaccine { get => strVaccine; }
         #endregion
 
         #region Set Array's Size
@@ -53,7 +66,8 @@ namespace prjCovidVac
         }
         #endregion
 
-        public static void AddPatient(string newID, string newMedAid, string newName, string newSurname, string newRefDoc, char newBloodType, string newAllergies, bool newHadCovid, string newVaccine)
+        #region Add a Patient
+        public void AddPatient(string newID, string newMedAid, string newName, string newSurname, string newRefDoc, char newBloodType, string newAllergies, bool newHadCovid, string newVaccine)
         {
             strID[iCounter] = newID;
             strMedAid[iCounter] = newMedAid;
@@ -67,6 +81,6 @@ namespace prjCovidVac
 
             iCounter++;
         }
-
+        #endregion
     }
 }

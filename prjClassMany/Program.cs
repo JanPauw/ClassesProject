@@ -26,10 +26,6 @@ namespace prjClassMany
             //print everythign that is inside the classes
             print_Items p = new print_Items();
             p.printReports();
-
-
-
-
         }
     }
 }
